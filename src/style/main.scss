@@ -1,0 +1,59 @@
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Open Sans";
+    color: #808080;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+@import './layout.scss';
+@import './headernavbar.scss';
+@import'./page-title.scss';
+@import'./form-field.scss';
+@import './details.scss';
+
+//AUTH
+@import './auth/signin.scss';
+@import './auth/signup.scss';
+
+//account
+@import './account/account-information.scss';
+@import'./account/purchase-history.scss';
+@import'./account/account.scss';
+
+//shop
+@import './shop/shop.scss';
+@import './shop/shop-search-bar.scss';
+@import'./shop/shop-product.scss';
+
+
+// CART
+@import 'shop/shop-cart';
+@import 'shop/cart-product';
+
+//QUANTITY
+@import 'quantity';
+@import'./green-price-tag.scss';
+
+// REVIEW
+@import 'order/review';
+@import'order/reviewForm.scss';
+@import'order/reviewProduct';
+
+// INFORMATION
+@import 'information/payment';
+@import 'information/shipping';
+@import './information/infoHelp.scss'
